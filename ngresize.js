@@ -84,7 +84,9 @@ ngResize.provider('resize', [function resizeProvider(){
           resized = 1;
         });
         bound = 1;
-        w.triggerHandler('resize');
+        window.setTimeout(function() {
+          w.triggerHandler('resize');
+        }, 0);
       }
     };
 
